@@ -1,0 +1,19 @@
+.home {
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .search-input {
+    margin-bottom: 16px;
+  }
+  .results {
+    margin-top: 24px;
+  }
+  .error-message {
+    margin-top: 15px;
+  }
+  .loading {
+    margin-top: 15px;
+  }
+}

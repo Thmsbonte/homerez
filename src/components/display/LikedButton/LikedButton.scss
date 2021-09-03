@@ -1,0 +1,16 @@
+@import "../../../constants/colors";
+
+.liked-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 100%;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.7;
+  }
+  > p {
+    font-weight: 500;
+  }
+}

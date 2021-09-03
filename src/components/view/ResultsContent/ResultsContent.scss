@@ -1,0 +1,23 @@
+@import "../../../constants/colors";
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  .results-content-title {
+    color: $Black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .results-content-subtitle {
+    color: $Black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .results-content-content {
+    color: $Black;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
