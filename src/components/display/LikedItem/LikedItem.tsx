@@ -1,5 +1,6 @@
 import "./LikedItem.scss";
 
+// Component interface
 interface Props {
   pageTitle: string;
 }

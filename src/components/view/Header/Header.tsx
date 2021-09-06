@@ -1,5 +1,6 @@
 import "./Header.scss";
 
+// Component interface
 interface Props {
   children?: JSX.Element;
 }

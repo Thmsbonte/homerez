@@ -20,15 +20,14 @@ import { red, blue } from "../../../constants/colors";
 // Interface import
 import { ISearchRequestHook } from "../../../interfaces/interfaces";
 
+// Component interface
 interface Props {
   searchRequestHook: ISearchRequestHook;
 }
 
 export const Home = ({ searchRequestHook }: Props) => {
-  console.log("Home renders");
-
   const [search, setSearch] = useState<string>("");
-  // Search custom hook declared at the root of the app for data persiting purpose and retrieve through props
+  // Search custom hook is declared at the root of the app for data persiting purpose and is retrieved through props
   const {
     searchRequest,
     setSearchResponse,
@@ -39,7 +38,7 @@ export const Home = ({ searchRequestHook }: Props) => {
 
   /* Events handlers */
 
-  // Send search when clicking on button and save response in state. Debounce function to avoid successive calls.
+  // Send search request when clicking on search button and save response in state. Debounce function to avoid successive calls.
   const handleSearchOnClick = debounce(
     () => {
       searchRequest(search);
@@ -48,7 +47,7 @@ export const Home = ({ searchRequestHook }: Props) => {
     { leading: true }
   );
 
-  // Send search when pressing enter key and save response in state. Debounce function to avoid successive calls.
+  // Send search request when pressing on enter key and save response in state. Debounce function to avoid successive calls.
   const handleSearchOnPress = debounce(
     (event: KeyboardEvent<HTMLInputElement>) => {
       if (event.code === "Enter") {

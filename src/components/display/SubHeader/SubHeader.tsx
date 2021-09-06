@@ -1,5 +1,6 @@
 import "./SubHeader.scss";
 
+// Component interface
 interface Props {
   title?: string;
 }

@@ -1,3 +1,4 @@
+// Save the title of a wikipedia page in local storage
 export const savePageInLocalStorage = (pageTitle: string) => {
   // Retrieve pages already saved
   const stored = window.localStorage.getItem("likedPages");

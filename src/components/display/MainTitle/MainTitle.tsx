@@ -1,5 +1,6 @@
 import "./MainTitle.scss";
 
+// Component interface
 interface Props {
   title?: string;
 }

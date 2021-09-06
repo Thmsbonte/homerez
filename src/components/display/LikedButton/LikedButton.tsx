@@ -1,9 +1,12 @@
-import { MouseEventHandler } from "react";
 import "./LikedButton.scss";
+
+// Libraries import
+import { MouseEventHandler } from "react";
 
 // Constants import
 import { red, lighRed, green, lightGreen } from "../../../constants/colors";
 
+// Component interface
 interface Props {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   isLiked?: boolean;

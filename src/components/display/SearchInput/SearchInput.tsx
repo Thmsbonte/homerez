@@ -1,6 +1,9 @@
-import { KeyboardEventHandler, ChangeEventHandler } from "react";
 import "./SearchInput.scss";
 
+// Libraries import
+import { KeyboardEventHandler, ChangeEventHandler } from "react";
+
+// Component interface
 interface Props {
   title?: string;
   placeholder?: string;

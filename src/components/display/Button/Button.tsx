@@ -1,9 +1,12 @@
-import { MouseEventHandler } from "react";
 import "./Button.scss";
+
+// Libraries import
+import { MouseEventHandler } from "react";
 
 // Constants import
 import { grey } from "../../../constants/colors";
 
+// Component interface
 interface Props {
   title?: string;
   backgroundColor?: string;

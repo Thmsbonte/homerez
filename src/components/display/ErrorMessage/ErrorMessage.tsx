@@ -1,5 +1,6 @@
 import "./ErrorMessage.scss";
 
+// Component interface
 interface Props {
   errorMessage?: string;
 }

@@ -4,6 +4,7 @@ import "./LikedList.scss";
 import { SubHeader } from "../../display/SubHeader/SubHeader";
 import { LikedItem } from "../../display/LikedItem/LikedItem";
 
+// Component interface
 interface Props {
   likedPages: string[];
   search: string;

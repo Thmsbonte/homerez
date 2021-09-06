@@ -11,6 +11,7 @@ import { savePageInLocalStorage } from "../../../services/savePageInLocalStorage
 // Interfaces import
 import { ISearchResponse } from "../../../interfaces/interfaces";
 
+// Component interface
 interface Props {
   searchResponse: ISearchResponse | null;
   setSearchResponse: React.Dispatch<
@@ -20,6 +21,7 @@ interface Props {
 
 export const Results = ({ searchResponse, setSearchResponse }: Props) => {
   /*Events handler*/
+  // Save page in local storage and update isliked search reponse key to true
   const handleOnClickLiked = () => {
     if (searchResponse?.title) {
       savePageInLocalStorage(searchResponse?.title);

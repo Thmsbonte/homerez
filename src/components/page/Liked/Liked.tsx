@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
 import "./Liked.scss";
+
+// Libraries import
+import { useEffect, useState } from "react";
 
 // Components import
 import { MainTitle } from "../../display/MainTitle/MainTitle";
@@ -18,7 +20,7 @@ export const Liked = () => {
   const [likedPages, setLikedPages] = useState<string[]>([]);
   const [search, setSearch] = useState<string>("");
 
-  // At opening of the page, get pages liked
+  // At opening of the page, get liked pages from local storage
   useEffect(() => {
     const likedPages: string[] = getLikedPageFromLocalStorage();
     setLikedPages(() => {
@@ -27,6 +29,8 @@ export const Liked = () => {
   }, []);
 
   /*Events handler */
+
+  // Save search input in state
   const handleSearchOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(() => {
       return event.target.value;

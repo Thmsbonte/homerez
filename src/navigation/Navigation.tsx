@@ -8,10 +8,12 @@ import { Liked } from "../components/page/Liked/Liked";
 // Interface import
 import { ISearchRequestHook } from "../interfaces/interfaces";
 
+// Component interface
 interface Props {
   searchRequestHook: ISearchRequestHook;
 }
 
+// App navigation
 export const Navigation = ({ searchRequestHook }: Props) => {
   return (
     <Router>

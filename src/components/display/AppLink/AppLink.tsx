@@ -1,12 +1,12 @@
+import "./AppLink.scss";
+
 // Libraries import
 import { Link } from "react-router-dom";
-
-// Components import
-import "./AppLink.scss";
 
 // Constants import
 import { grey } from "../../../constants/colors";
 
+// Component interface
 interface Props {
   title?: string;
   to?: string;
